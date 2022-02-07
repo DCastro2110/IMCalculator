@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Exercícios Aula 25</title>
+</head>
+<body>
+
+    <header>
+        <div class=" header-cont container">
+            <ul class="menu-list">
+                <li><a href="#what-is" class="menu-item">O que é o IMC?</a></li>
+                <li><a href="#calc" class="menu-item">Caculadora de IMC</a></li>
+                <li><a href="#rates" class="menu-item">Taxas do IMC</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="white-sec default" id="what-is">
+        <div class="container">
+            <h1 class="title-sec">O que é o IMC?</h1>
+            <div class="what-is-cont">
+                <div class="left-what-is">
+                    <p>O índice de massa corporal (IMC) é uma medida internacional usada para calcular se uma pessoa está no peso ideal. Desenvolvido pelo polímata Lambert Quételet no fim do século XIX, trata-se de um método fácil e rápido para a avaliação do nível de gordura de cada pessoa, sendo, por isso, um preditor internacional de obesidade adotado pela Organização Mundial da Saúde (OMS).</p>
+                    <p>O IMC é determinado pela divisão da massa do indivíduo pelo quadrado de sua altura, em que a massa está em quilogramas e a altura em metros.</p>
+                    <p class="wiki-link">Fonte: <a href="https://pt.wikipedia.org/wiki/%C3%8Dndice_de_massa_corporal">Wikipedia</a></p>
+                </div>
+                <div class="right-what-is">
+                    <img src="media/imc-formula.jpg" alt="Fórmula do IMC apresentada no texto.">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="calc-sec default" id="calc">
+        <div class="container">
+            <h1 class="title-sec">Calculadora de IMC</h1>
+            <div class="calc-cont">
+                <div class="left-calc">
+                    <div class="imc-box">
+                        <form action="#rates" method="get" class="form">
+                            <label for="height">Altura</label>
+                               <div class="input-pack"><input type="text" name="height" id="height" numeric required> <span>cm</span></div>
+                            <label for="weight">Peso</label>
+                                <div class="input-pack"><input type="text" name="weight" id="weight" numeric required> <span>kg</span></div>
+                            <button class="button">Calcular</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>            
+    </section>
+
+    <section class="rates-sec default" id="rates">
+        <div class="container">
+            <h1 class="title-sec">Taxas de IMC</h1>
+            <div class="rates-cont">
+                <div class="box"></div>
+                <table class="table">
+                    <tr>
+                        <th>Tipo</th>
+                        <th>IMC</th>
+                    </tr>
+                    <tr class="underweight">
+                        <td>Abaixo do Peso</td>
+                        <td>18.5 ou menos</td>
+                    </tr>
+                    <tr class="normal-weight">
+                        <td>Normal</td>
+                        <td>18.5 a 24.9</td>
+                    </tr>
+                    <tr class="overweight">
+                        <td>Acima do Peso</td>
+                        <td>25 a 29.9</td>
+                    </tr>
+                    <tr class="obesity">
+                        <td>Obeso</td>
+                        <td>30 a 39.9</td>
+                    </tr>
+                    <tr class="extreme-obesity">
+                        <td>Extremamente Obeso</td>
+                        <td>40 ou mais</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Feito por <a href="https://github.com/d4v1z1n" target="_blank">Davi Castro</a></p>
+    </footer>
+    
+    <script src="assets/js/app.js"></script>
+</body>
+</html>

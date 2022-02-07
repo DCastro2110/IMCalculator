@@ -1,0 +1,244 @@
+:root {
+    --gold-color: rgb(202, 182, 0);
+
+    --r-color: rgba(255, 0, 0, 0.6);
+    --g-color: rgba(0, 255, 0, 0.6);
+    --y-color: rgba(255, 255, 0, 0.6);
+    --o-color: rgba(255, 166, 0, 0.6);
+
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito';
+}
+
+/* Default */
+
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+.container {
+    max-width: 1140px;
+    width: 100%;
+    margin: auto;
+    padding: 20px 10px;
+}
+.white-sec {
+    background-color: #fff;
+    color: #000;
+}
+.title-sec {
+    color: var(--gold-color);
+    text-transform: uppercase;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/*Header*/
+
+
+header {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #000;
+    padding: 10px 20px;
+}
+.header-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu-list .menu-item {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-family: 'Nunito';
+    color: #fff;
+}
+.menu-list li {
+    transition: transform 150ms ease-in-out;
+}
+
+.menu-list li:hover, .menu-item:hover {
+    transform: scale(1.1);
+    color: var(--gold-color);
+}
+.menu-list {
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+/* What´s IMC? */
+
+
+#what-is {
+    color: black;
+}
+.what-is-cont {
+    display: flex;
+}
+.left-what-is {
+    flex: 1;
+}
+.left-what-is p {
+    text-indent: 20px;
+}
+.right-what-is {
+    flex: 1;
+    text-align: center;
+}
+.right-what-is img {
+    object-fit: contain;
+}
+.wiki-link {
+    margin-top: 20px;
+}
+.wiki-link a {
+    text-decoration: underline;
+}
+
+
+/* IMC Calculator */
+
+
+.calc-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.imc-box {
+    width: 500px;
+    padding: 30px;
+    background-color: #ddd;
+    box-shadow: 5px 2px 10px #888;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form label {
+    margin-left: -200px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.form label:nth-of-type(2) {
+    margin-left: -210px;
+}
+.input-pack {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 7px;
+}
+.input-pack input {
+    width: 50%;
+    height: 30px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid #ccc;
+    padding: 3px;
+    color: #000;
+}
+.button {
+    width: 50%;
+    height: 40px;
+    border-radius: 10px;
+    background-color: red;
+    margin-top: 40px;
+    border: none;
+    color: #fff;
+    transition: transform 150ms ease-in-out;
+    cursor: pointer;
+}
+.button:hover {
+    transform: scale(1.02);
+}
+
+
+/* IMC Rates */
+
+
+.table {
+    width: 100%;
+    gap: 0;
+    border-spacing: 0;
+}
+.table th {
+    width: 50%;
+}
+.table td {
+    text-align: center;
+    padding: 10px;
+}
+.imc-result {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+
+/* Footer */
+
+
+footer {
+    height: 80px;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer p {
+    color: #fff;
+    margin: 0 auto;
+    text-align: center;
+}
+footer p a {
+    text-decoration: underline;
+}
+
+/* Media-Query */
+
+
+@media (max-width: 768px) {
+    .what-is-cont {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu-list .menu-item {
+        font-size: 12px;
+    }
+    .title-sec {
+        font-size: 20px ;
+    }
+    .right-what-is img {
+        width: 100%;
+        object-fit: cover;
+    }
+}
