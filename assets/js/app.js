@@ -8,9 +8,7 @@ function calcOfMyImc() {
     form.addEventListener('submit', (e) => {
         e.preventDefault()
 
-        window.scroll(0, document.body.scrollHeight)
-
-        const height = Number(heightInput.value)
+        const height =  Number(heightInput.value)
         const weight = Number(weigthInput.value)
         const imc = calc(weight, height).toFixed(2)
         let msg
@@ -24,6 +22,8 @@ function calcOfMyImc() {
             writer(msg)
             return
         }
+
+        window.scroll(0, document.body.scrollHeight)
 
         msg = `Seu IMC é de ${imc}`
         weightType(imc)
@@ -76,6 +76,5 @@ function calcOfMyImc() {
             tableLines.item(1).setAttribute('style', 'background-color: var(--r-color)')
         }
     }
-    console.log(tableLines)
 }
 calcOfMyImc()
