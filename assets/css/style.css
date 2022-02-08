@@ -122,7 +122,8 @@ header {
 }
 
 .imc-box {
-    width: 500px;
+    width: 100%;
+    max-width: 500px;
     padding: 30px;
     background-color: #ddd;
     box-shadow: 5px 2px 10px #888;
@@ -133,20 +134,18 @@ header {
     border-radius: 10px;
 }
 .form {
-    width: 100%;
+    width: fit-content;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 .form label {
-    margin-left: -200px;
     margin-bottom: 5px;
     margin-top: 5px;
+    align-self: flex-start;
 }
-.form label:nth-of-type(2) {
-    margin-left: -210px;
-}
+
 .input-pack {
     display: flex;
     justify-content: center;
@@ -154,7 +153,7 @@ header {
     gap: 7px;
 }
 .input-pack input {
-    width: 50%;
+    width: 220px;
     height: 30px;
     border-radius: 10px;
     outline: none;
@@ -240,5 +239,8 @@ footer p a {
     .right-what-is img {
         width: 100%;
         object-fit: cover;
+    }
+    .input-pack input {
+        width: 180px;
     }
 }
