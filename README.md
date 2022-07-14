@@ -1,2 +1,2 @@
-# IMC-Calculator
- Calculador de IMC Moderno
+# Calculadora de IMC
+
