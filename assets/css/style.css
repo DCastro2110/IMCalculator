@@ -7,12 +7,17 @@
     --o-color: rgba(255, 166, 0, 0.6);
 
 }
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'Nunito';
 }
+
+body {
+    scroll-behavior: smooth;
+}    
 
 /* Default */
 
